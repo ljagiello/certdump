@@ -16,7 +16,7 @@ Example:
 {{ .Data.serial_number }}
 {{ .Data.certificate | plugin "certdump" "/srv/ssl/logstash.pem" "root" }}
 {{ .Data.private_key | plugin "certdump" "/srv/ssl/logstash-key.pem" "root" }}
-{{ .Data.private_key | plugin "certdump2" "/srv/ssl/logstash-key-pkcs8.pem" "root" "pkcs8" }}
+{{ .Data.private_key | plugin "certdump" "/srv/ssl/logstash-key-pkcs8.pem" "root" "pkcs8" }}
 {{ .Data.issuing_ca | plugin "certdump" "/srv/ssl/logstash-ca.pem" "root" }}
 {{ end }}
 ```
