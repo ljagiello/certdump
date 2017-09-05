@@ -10,7 +10,7 @@ certdump <filepath> <user> <group> <mode> <type> <data>
 
 `type` is optional, supported: none(default), pkcs8
 
-Example:
+Example of use in consul-template:
 ```
 {{ with secret "pki/issue/logstash" "ttl=720h" "common_name=logstash.service.consul" }}
 {{ .Data.serial_number }}
