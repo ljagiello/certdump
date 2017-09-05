@@ -1,9 +1,8 @@
-certdump
 Certdump with pkcs8 support
 
 Based off [certdump](https://gist.github.com/tam7t/1b45125ae4de13b3fc6fd0455954c08e) consul-template plugin for writing vault-generated certificates to separate files with support for [PKCS8](https://en.wikipedia.org/wiki/PKCS_8) private key format.
 
-# Usage
+# Usage:
 ```
 certdump <filepath> <user> <group> <mode> <type> <data>
 ```
@@ -21,7 +20,7 @@ Example of use in consul-template:
 {{ end }}
 ```
 
-# Build
+# `certdump` build:
 ```
 go get -v -t -d ./...
 go build certdump.go
